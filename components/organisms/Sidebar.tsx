@@ -58,30 +58,30 @@ export default function Sidebar() {
       <div className="mt-6 flex flex-col gap-5">
 
         <SidebarSection title="Contacto">
-          <div className="space-y-3">
-            {contactItems.map((item) => (
-              <div
+        <div className="space-y-3">
+          {contactItems.map((item) => (
+            <div
                 key={item.text}
-                className="flex items-start gap-2 text-sm text-[var(--foreground)]"
+                className="flex min-w-0 items-start gap-2 text-sm text-[var(--foreground)]"
               >
-                <span className="flex-shrink-0">{item.icon}</span>
+              <span className="shrink-0">{item.icon}</span>
 
-                {item.href ? (
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="break-all transition-colors hover:text-[var(--primary)]"
-                  >
-                    {item.text}
-                  </a>
-                ) : (
-                  <span>{item.text}</span>
-                )}
-              </div>
-            ))}
-          </div>
-        </SidebarSection>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="min-w-0 break-all transition-colors hover:text-[var(--primary)]"
+                >
+                  {item.text}
+                </a>
+              ) : (
+                <span className="min-w-0 break-all">{item.text}</span>
+              )}
+            </div>
+          ))}
+        </div>
+      </SidebarSection>
 
         {/* IDIOMAS */}    
         <SidebarSection title="Idiomas">

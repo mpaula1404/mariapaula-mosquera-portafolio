@@ -94,7 +94,3 @@ Contacto
 
 Licencia
 - Contenido del repositorio: uso educativo y personal. Añade una licencia formal si deseas redistribuir.
-
-Próximos pasos opcionales
-- Puedo añadir `requirements.txt` y un script `npm run gen-cv` que ejecute la generación del PDF desde Node.
-- Puedo ajustar el PDF para mayor fidelidad visual (tipografías y espaciado).

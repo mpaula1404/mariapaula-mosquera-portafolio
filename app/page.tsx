@@ -84,7 +84,7 @@ const projects = [
 	},
 ];
 
-/** Experiencias laborales (timeline) */
+/** Experiencias laborales*/
 const experiences = [
 	{
 		icon: "</>",
@@ -109,7 +109,7 @@ const experiences = [
 	},
 ];
 
-/** Enlaces sociales (barra flotante en la UI) */
+/** Enlaces sociales */
 const socialLinks = [
 	{ label: "GitHub", href: "https://github.com/", icon: "G" },
 	{ label: "LinkedIn", href: "https://www.linkedin.com/", icon: "in" },
@@ -138,7 +138,7 @@ export default function Home() {
 					))}
 				</div>
 			</aside>
-			<div className="mx-auto grid max-w-7xl gap-8 [grid-template-columns:minmax(260px,340px)_minmax(0,1fr)] md:items-start">
+			<div className="mx-auto grid w-full max-w-7xl grid-cols-[220px_minmax(0,1fr)] gap-4 sm:grid-cols-[250px_minmax(0,1fr)] sm:gap-5 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-8 md:items-start">
 				<div className="w-full md:sticky md:top-6 md:self-start">
 					<Sidebar />
 				</div>
@@ -201,7 +201,6 @@ export default function Home() {
 											className="w-full h-full object-cover"
 										/>
 									</div>
-									{/* Decorative corner */}
 									<div className="absolute bottom-0 right-0 w-24 h-24 border-b-4 border-r-4 border-[var(--primary)] rounded-br-full"></div>
 								</div>
 							</div>
@@ -249,7 +248,7 @@ export default function Home() {
 						</div>
 					</section>
 
-					{/* PORTAFOLIO SECTION */}
+					{/* Sección de Portafolio */}
 					<section className="rounded-[32px] border border-[var(--border)] bg-[var(--card)] p-6 shadow-[0_25px_60px_rgba(70,50,38,0.08)] backdrop-blur-sm sm:p-8 md:p-10">
 						<Title className="text-xl font-bold tracking-tight text-[var(--foreground)] sm:text-2xl">
 							Portafolio
@@ -379,7 +378,7 @@ export default function Home() {
 				</div>
 			</Modal>
 
-			{/* FOOTER SECTION */}
+			{/* Seccion Footer */}
 			<footer className="mt-10 rounded-[32px] border border-[var(--border)] bg-gradient-to-r from-[#f8f2e9] via-[#f4e7d5] to-[#efe3d0] p-6 shadow-[0_25px_60px_rgba(70,50,38,0.08)] sm:p-8 md:p-10">
 				<div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
 					<div>
